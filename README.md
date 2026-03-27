@@ -9,6 +9,8 @@ HyperBench is designed as an **inference-time evaluation tool**. It does
 not perform model training. Instead, it enables users to test
 already-trained models under a wide range of synthetic scenarios.
 
+**Project Home: https://github.com/ritikgshah/HyperBench**. Please visit the github repository for exact implementation details and documentation. This PyPi project is solely meant to serve as the distribution method. 
+
 ------------------------------------------------------------------------
 
 ## Key Features
