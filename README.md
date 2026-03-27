@@ -1,6 +1,6 @@
 # HyperBench
 
-**HyperBench** is a synthetic benchmarking framework for hyperspectral
+**HyperBench** is a synthetic benchmarking framework for fusion based hyperspectral
 super-resolution (HSR) methods. It provides a standardized, reproducible
 pipeline for evaluating models using controlled degradations, consistent
 metrics, and structured experiment outputs.
