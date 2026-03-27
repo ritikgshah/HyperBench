@@ -1,0 +1,74 @@
+# Author: Ritik Shah
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hyperbench"
+version = "0.1.0"
+description = "Synthetic benchmarking for hyperspectral super-resolution methods"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+  { name = "HyperBench Authors" }
+]
+keywords = [
+  "hyperspectral imaging",
+  "super-resolution",
+  "remote sensing",
+  "benchmarking",
+  "image fusion",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Topic :: Scientific/Engineering :: Image Processing",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+  "numpy==1.26.4",
+  "scipy>=1.10",
+  "opencv-python==4.9.0.80",
+  "matplotlib>=3.7",
+  "sewar>=0.4.6",
+  "spectral>=0.23",
+  "ipykernel>=6.29",
+  "jupyterlab>=4.0",
+  "pyyaml>=6.0"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "pytest-cov>=4.1",
+  "build>=1.2",
+  "twine>=5.0",
+  "ruff>=0.6",
+]
+
+[project.scripts]
+hyperbench = "hyperbench.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B"]
