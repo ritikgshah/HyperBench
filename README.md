@@ -88,7 +88,20 @@ hyperbench run --config config.yaml --pipeline-module path/to/model.py
 
 ## Installation
 
+To install and seamlessly run hyperbench, create a fresh conda environment:
+
+```
+conda create --name <env-name> python=3.9.21
+conda activate <env-name>
+```
+
+Once created and activated, proceed to install hyperbench:
+
+```
 pip install hyperbench
+```
+
+This package installs all the hyperbench dependencies, however, any additional libraries that your models require such as tensorflow, pytorch, tqdm, etc. will have to be installed seperately.
 
 ---
 
@@ -125,9 +138,9 @@ src/hyperbench/
 
 ## Documentation
 
-We provide in depth documentation, allowing a user to seamlessly start generating experiments with hyperbench.
+We provide in depth documentation, allowing a user to seamlessly start generating experiments with hyperbench. It is recommended that as a new user, you first go through the documentation in detail.
 
-## Documentation Structure
+### Documentation Structure
 ```
 docs/
 ├── index.md
@@ -142,8 +155,6 @@ docs/
 ├── visualization.md
 ├── adapters.md
 ├── model-integration.md
-├── spectralift.md
-├── spectramorph.md
 └── api-reference.md
 ```
 ---
