@@ -5,8 +5,7 @@ hyperspectral super-resolution (HSR)** methods.
 
 It is designed specifically for the setting where a model reconstructs a
 high-resolution hyperspectral image (HR-HSI) by **fusing**: - a
-**low-resolution hyperspectral image (LR-HSI)**, and\
-- a **high-resolution multispectral image (HR-MSI)**
+**low-resolution hyperspectral image (LR-HSI)**, and a **high-resolution multispectral image (HR-MSI)**
 
 HyperBench provides a standardized, reproducible pipeline for generating
 these inputs, evaluating models, and logging results.
