@@ -138,7 +138,7 @@ src/hyperbench/
 
 ## Documentation
 
-We provide in depth documentation, allowing a user to seamlessly start generating experiments with hyperbench. It is recommended that as a new user, you first go through the documentation in detail.
+We provide in depth documentation, allowing a user to seamlessly start generating experiments with hyperbench. It is recommended that as a new user, you first go through the documentation in detail. [Documentation index](docs/index.md) is the first file recommended as it lays out the structure and sequence that the documentation files should be read in.
 
 ### Documentation Structure
 ```
