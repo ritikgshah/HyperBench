@@ -22,27 +22,27 @@ If you are new to HyperBench, begin here:
   A minimal end-to-end workflow demonstrating how to load data, generate degradations,
   run a pipeline, and compute metrics.
 
-- [Core concepts](/core-concepts.md): `core-concepts.md`  
+- [Core concepts](./core-concepts.md): `core-concepts.md`  
   Explanation of LR-HSI, HR-MSI, PSF, SRF, and the fusion-based HSR setting.
 
 ---
 
 ## Running Experiments
 
-- [Configuration files](/config-files.md): `config-files.md`  
+- [Configuration files](./config-files.md): `config-files.md`  
   Defines how to specify experiments using YAML or JSON.
 
-- [Command Line Interface (CLI) usage](/cli.md): `cli.md`  
+- [Command Line Interface (CLI) usage](./cli.md): `cli.md`  
   Run benchmarks directly from the command line.
 
 ---
 
 ## Model Integration
 
-- [Pipeline interface](/pipeline-interface.md): `pipeline-interface.md`  
+- [Pipeline interface](./pipeline-interface.md): `pipeline-interface.md`  
   Defines the required `run_pipeline(...)` interface for all models.
 
-- [Model integration guide](/model-integration.md): `model-integration.md`  
+- [Model integration guide](./model-integration.md): `model-integration.md`  
   Practical guidance for integrating real-world models.
 
 
@@ -50,26 +50,26 @@ If you are new to HyperBench, begin here:
 
 ## Framework Components
 
-- [IO](/io.md): `io.md`  
+- [IO](./io.md): `io.md`  
   Loading and validating hyperspectral scenes.
 
-- [Degradations](/degradations.md): `degradations.md`  
+- [Degradations](./degradations.md): `degradations.md`  
   PSFs, SRFs, and synthetic input generation.
 
-- [Metrics](/metrics.md): `metrics.md`  
+- [Metrics](./metrics.md): `metrics.md`  
   Evaluation metrics and their interpretation.
 
-- [Visualization](/visualization.md): `visualization.md`  
+- [Visualization](./visualization.md): `visualization.md`  
   Built-in tools for inspecting data and degradations.
 
-- [Adapters](/adapters.md): `adapters.md`  
+- [Adapters](./adapters.md): `adapters.md`  
   Model wrappers and backend handling.
 
 ---
 
 ## Reference
 
-- [API refence](/api-reference.md): `api-reference.md`  
+- [API refence](./api-reference.md): `api-reference.md`  
   Detailed descriptions of all public functions, classes, and modules.
 
 ---
