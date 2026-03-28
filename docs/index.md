@@ -18,7 +18,7 @@ while users supply the reconstruction model.
 
 If you are new to HyperBench, begin here:
 
-- [Quickstart](/quickstart.md): `quickstart.md`  
+- [Quickstart](./quickstart.md): `quickstart.md`  
   A minimal end-to-end workflow demonstrating how to load data, generate degradations,
   run a pipeline, and compute metrics.
 
