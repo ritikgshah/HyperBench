@@ -125,11 +125,27 @@ src/hyperbench/
 
 ## Documentation
 
-- docs/quickstart.md  
-- docs/config-files.md  
-- docs/cli.md  
-- docs/model-integration.md  
+We provide in depth documentation, allowing a user to seamlessly start generating experiments with hyperbench.
 
+## Documentation Structure
+```
+docs/
+├── index.md
+├── quickstart.md
+├── core-concepts.md
+├── pipeline-interface.md
+├── config-files.md
+├── cli.md
+├── io.md
+├── degradations.md
+├── metrics.md
+├── visualization.md
+├── adapters.md
+├── model-integration.md
+├── spectralift.md
+├── spectramorph.md
+└── api-reference.md
+```
 ---
 
 ## Scope
