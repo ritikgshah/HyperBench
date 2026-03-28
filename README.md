@@ -1,0 +1,153 @@
+# HyperBench
+
+HyperBench is a benchmarking framework for **fusion-based hyperspectral super-resolution (HSR)** methods.
+
+It is designed for the setting in which a high-resolution hyperspectral image (HR-HSI) is reconstructed by fusing:
+
+- a low-resolution hyperspectral image (LR-HSI), and  
+- a high-resolution multispectral image (HR-MSI)  
+
+HyperBench provides a standardized and reproducible pipeline for generating synthetic degradations, evaluating reconstruction quality, and logging structured results.
+
+---
+
+## Overview
+
+Hyperspectral super-resolution methods are often evaluated under inconsistent experimental setups, making direct comparison difficult. HyperBench addresses this by providing:
+
+- a unified degradation pipeline  
+- a consistent evaluation protocol  
+- a model-agnostic integration interface  
+- structured experiment outputs  
+
+The framework is intended strictly for evaluation, not training.
+
+---
+
+## Core Functionality
+
+HyperBench implements the full evaluation workflow:
+
+1. Load a hyperspectral scene from a .mat file  
+2. Generate synthetic inputs:
+   - LR-HSI via spatial degradation  
+   - HR-MSI via spectral degradation  
+3. Pass degraded inputs into a model pipeline  
+4. Normalize and validate model outputs  
+5. Optionally apply output clipping  
+6. Compute evaluation metrics  
+7. Record results to a structured CSV file  
+
+---
+
+## Key Features
+
+### Synthetic Degradation Pipeline
+
+- Built-in PSFs for spatial degradation  
+- Built-in SRFs for MSI simulation  
+- Configurable downsampling ratios  
+- Configurable MSI band counts  
+- Configurable noise levels  
+
+---
+
+### Evaluation Metrics
+
+- RMSE  
+- PSNR  
+- SSIM  
+- UIQI  
+- ERGAS  
+- SAM  
+
+---
+
+### Model Integration
+
+Models must expose:
+
+def run_pipeline(HR_MSI, LR_HSI, srf, psf=None, metadata=None):
+    return prediction
+
+or optionally:
+
+return prediction, stats
+
+Supported backends include NumPy, TensorFlow, and PyTorch.
+
+---
+
+### CLI and Configuration
+
+Experiments can be defined using YAML or JSON configuration files and executed via:
+
+hyperbench run --config config.yaml --pipeline-module path/to/model.py
+
+---
+
+## Installation
+
+pip install hyperbench
+
+---
+
+## Repository Structure
+
+hyperbench/
+├── src/hyperbench/
+├── docs/
+├── notebooks/
+├── configs/
+├── examples/
+├── README.md
+├── LICENSE
+└── pyproject.toml
+
+---
+
+## Package Structure
+
+src/hyperbench/
+├── adapters/
+├── benchmark/
+├── degradations/
+├── io/
+├── metrics/
+├── utils/
+├── cli.py
+├── config.py
+├── exceptions.py
+├── types.py
+└── __init__.py
+
+---
+
+## Documentation
+
+- docs/quickstart.md  
+- docs/config-files.md  
+- docs/cli.md  
+- docs/model-integration.md  
+
+---
+
+## Scope
+
+HyperBench provides:
+- synthetic benchmarking  
+- degradation generation  
+- evaluation metrics  
+- CSV logging  
+- model integration  
+
+HyperBench does not provide:
+- model training  
+- dataset hosting  
+- pretrained models  
+
+---
+
+## License
+
+MIT License
