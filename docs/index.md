@@ -18,31 +18,31 @@ while users supply the reconstruction model.
 
 If you are new to HyperBench, begin here:
 
-- Quickstart: `quickstart.md`  
+- [Quickstart](docs/quickstart.md): `quickstart.md`  
   A minimal end-to-end workflow demonstrating how to load data, generate degradations,
   run a pipeline, and compute metrics.
 
-- Core Concepts: `core-concepts.md`  
+- [Core concepts](docs/core-concepts.md): `core-concepts.md`  
   Explanation of LR-HSI, HR-MSI, PSF, SRF, and the fusion-based HSR setting.
 
 ---
 
 ## Running Experiments
 
-- Configuration Files: `config-files.md`  
+- [Configuration files](docs/config-files.md): `config-files.md`  
   Defines how to specify experiments using YAML or JSON.
 
-- CLI Usage: `cli.md`  
+- [Command Line Interface (CLI) usage](docs/cli.md): `cli.md`  
   Run benchmarks directly from the command line.
 
 ---
 
 ## Model Integration
 
-- Pipeline Interface: `pipeline-interface.md`  
+- [Pipeline interface](docs/pipeline-interface.md): `pipeline-interface.md`  
   Defines the required `run_pipeline(...)` interface for all models.
 
-- Model Integration Guide: `model-integration.md`  
+- [Model integration guide](docs/model-integration.md): `model-integration.md`  
   Practical guidance for integrating real-world models.
 
 
@@ -50,26 +50,26 @@ If you are new to HyperBench, begin here:
 
 ## Framework Components
 
-- IO: `io.md`  
+- [IO](docs/io.md): `io.md`  
   Loading and validating hyperspectral scenes.
 
-- Degradations: `degradations.md`  
+- [Degradations](docs/degradations.md): `degradations.md`  
   PSFs, SRFs, and synthetic input generation.
 
-- Metrics: `metrics.md`  
+- [Metrics](docs/metrics.md): `metrics.md`  
   Evaluation metrics and their interpretation.
 
-- Visualization: `visualization.md`  
+- [Visualization](docs/visualization.md): `visualization.md`  
   Built-in tools for inspecting data and degradations.
 
-- Adapters: `adapters.md`  
+- [Adapters](docs/adapters.md): `adapters.md`  
   Model wrappers and backend handling.
 
 ---
 
 ## Reference
 
-- API Reference: `api-reference.md`  
+- [API refence](docs/api-reference.md): `api-reference.md`  
   Detailed descriptions of all public functions, classes, and modules.
 
 ---
