@@ -93,7 +93,7 @@ pip install hyperbench
 ---
 
 ## Repository Structure
-
+```
 hyperbench/
 ├── src/hyperbench/
 ├── docs/
@@ -103,11 +103,11 @@ hyperbench/
 ├── README.md
 ├── LICENSE
 └── pyproject.toml
-
+```
 ---
 
 ## Package Structure
-
+```
 src/hyperbench/
 ├── adapters/
 ├── benchmark/
@@ -120,7 +120,7 @@ src/hyperbench/
 ├── exceptions.py
 ├── types.py
 └── __init__.py
-
+```
 ---
 
 ## Documentation
