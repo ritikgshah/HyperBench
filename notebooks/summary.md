@@ -1,7 +1,7 @@
 
 ### Notebook Overview
 
-**[01_hyperbench_quickstart.ipynb](./notebooks/01_hyperbench_quickstart.ipynb)**  
+**[01_hyperbench_quickstart.ipynb](./01_hyperbench_quickstart.ipynb)**  
 Introduces the core workflow of HyperBench.  
 You will learn how to:
 - load a hyperspectral scene
@@ -13,7 +13,7 @@ This notebook provides the fastest path to running a complete example.
 
 ---
 
-**[02_loading_and_visualization.ipynb](./notebooks/02_loading_and_visualization.ipynb)**  
+**[02_loading_and_visualization.ipynb](./02_loading_and_visualization.ipynb)**  
 Focuses on data handling and visualization.  
 You will learn how to:
 - load `.mat` hyperspectral scenes
@@ -24,7 +24,7 @@ This establishes a clear understanding of the data representation used throughou
 
 ---
 
-**[03_degradations_tutorial.ipynb](./notebooks/03_degradations_tutorial.ipynb)**  
+**[03_degradations_tutorial.ipynb](./03_degradations_tutorial.ipynb)**  
 Explores the synthetic degradation pipeline in detail.  
 You will learn how to:
 - generate and visualize different PSFs
@@ -36,7 +36,7 @@ This notebook makes the degradation process fully transparent.
 
 ---
 
-**[04_metrics_and_evaluation.ipynb](./notebooks/04_metrics_and_evaluation.ipynb)**  
+**[04_metrics_and_evaluation.ipynb](./04_metrics_and_evaluation.ipynb)**  
 Covers evaluation of reconstruction quality.  
 You will learn how to:
 - compute standard hyperspectral metrics (RMSE, PSNR, SSIM, SAM)
@@ -47,7 +47,7 @@ This notebook explains how HyperBench quantifies performance.
 
 ---
 
-**[05_model_interface_and_adapters.ipynb](./notebooks/05_model_interface_and_adapters.ipynb)**  
+**[05_model_interface_and_adapters.ipynb](./05_model_interface_and_adapters.ipynb)**  
 Describes how models integrate into HyperBench.  
 You will learn how to:
 - implement the `run_pipeline(...)` interface
@@ -59,7 +59,7 @@ This notebook is essential for integrating custom methods.
 
 ---
 
-**[06_framework_conversion_tutorial.ipynb](./notebooks/06_framework_conversion_tutorial.ipynb)**  
+**[06_framework_conversion_tutorial.ipynb](./06_framework_conversion_tutorial.ipynb)**  
 Explains framework interoperability.  
 You will learn how to:
 - convert data between NumPy, TensorFlow, and PyTorch
@@ -70,7 +70,7 @@ This ensures compatibility with real-world deep learning models.
 
 ---
 
-**[07_end_to_end_benchmark_pipeline.ipynb](./notebooks/07_end_to_end_benchmark_pipeline.ipynb)**  
+**[07_end_to_end_benchmark_pipeline.ipynb](./07_end_to_end_benchmark_pipeline.ipynb)**  
 Demonstrates full benchmark orchestration.  
 You will learn how to:
 - define explicit benchmark cases using `DegradationSpec`
