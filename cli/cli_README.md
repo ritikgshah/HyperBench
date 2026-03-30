@@ -173,7 +173,7 @@ To run real hyperspectral fusion methods:
 - replace `run_pipeline(...)` with your model  
 - or wrap your model using `PipelineAdapter`  
 
-See [examples](../examples) for implementations of real research models running on the HyperBench framework.
+See [examples](../examples/examples_README.md) for implementations of real research models running on the HyperBench framework.
 
 ---
 
