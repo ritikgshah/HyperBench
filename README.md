@@ -1,5 +1,7 @@
 # HyperBench
 
+**Authors:** Ritik Shah ([rgshah@umass.edu](mailto:rgshah@umass.edu)), Marco Duarte ([mduarte@ecs.umass.edu](mailto:mduarte@ecs.umass.edu)) 
+
 HyperBench is a benchmarking framework for **fusion-based hyperspectral super-resolution (HSR)** methods.
 
 It is designed for the setting in which a high-resolution hyperspectral image (HR-HSI) is reconstructed by fusing:
@@ -157,6 +159,18 @@ docs/
 ├── model-integration.md
 └── api-reference.md
 ```
+
+---
+
+## Notebooks
+
+The `notebooks/` directory provides a structured, tutorial-based walkthrough of HyperBench.  
+These notebooks are designed to guide users from basic usage to full benchmark orchestration in a clear and practical way.
+
+Each notebook focuses on a specific part of the framework, while collectively demonstrating how all components work together in a complete hyperspectral fusion benchmarking pipeline.
+
+To seamlessly navigate through the notebooks folder and to understand the sequence in which you should explore these notebooks is clearly laid out in the [notebooks summary][notebooks/summary.md]. It is recommended to read through this file before exploring individual notebooks.
+
 ---
 
 ## Scope
