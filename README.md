@@ -113,7 +113,7 @@ hyperbench/
 ├── src/hyperbench/
 ├── docs/
 ├── notebooks/
-├── configs/
+├── cli/
 ├── examples/
 ├── README.md
 ├── LICENSE
@@ -169,6 +169,12 @@ The `notebooks/` directory provides a structured, tutorial-based walkthrough of 
 These notebooks are designed to guide users from basic usage to full benchmark orchestration in a clear and practical way. Each notebook focuses on a specific part of the framework, while collectively demonstrating how all components work together in a complete hyperspectral fusion benchmarking pipeline.
 
 The sequence in which you should explore these notebooks is clearly explained in the [notebooks summary](notebooks/summary.md). It is recommended to read through this file before exploring individual notebooks to have a seamless experience in understanding the tutorial.
+
+---
+
+# CLI: Running HyperBench from Python Scripts
+
+The `cli/` directory provides a clean, script-based pathway to run HyperBench end-to-end—without notebooks. It mirrors the full workflow demonstrated in **Notebook 07 (End-to-End Benchmark Pipeline)** and is intended for repeatable, production-style experiments. [Command line interface help](cli/cli_README.md) provides further details about how to structure python scripts, how to use yaml and json configuration templates to run your own experiments, and how to integrate a simple pipeline (the same one used in the notebooks tutorial) to get started with the HyperBench framework.
 
 ---
 
