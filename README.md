@@ -1,6 +1,6 @@
 # HyperBench
 
-**Authors:** Ritik Shah ([rgshah@umass.edu](mailto:rgshah@umass.edu)), Marco Duarte ([mduarte@ecs.umass.edu](mailto:mduarte@ecs.umass.edu)) 
+**Authors:** Ritik Shah ([rgshah@umass.edu](mailto:ritik.shah@aritheon.com)), Marco Duarte ([mduarte@ecs.umass.edu](mailto:mduarte@ecs.umass.edu)) 
 
 HyperBench is a benchmarking framework for **fusion-based hyperspectral super-resolution (HSR)** methods.
 
