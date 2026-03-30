@@ -80,16 +80,6 @@ Supported backends include NumPy, TensorFlow, and PyTorch.
 
 ---
 
-### CLI and Configuration
-
-Experiments can be defined using YAML or JSON configuration files and executed via:
-
-hyperbench run --config config.yaml --pipeline-module path/to/model.py
-
-This is explained further below.
-
----
-
 ## Installation
 
 To install and seamlessly run hyperbench, create a fresh conda environment:
