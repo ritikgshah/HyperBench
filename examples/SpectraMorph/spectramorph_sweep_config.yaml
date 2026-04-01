@@ -1,0 +1,33 @@
+scene_path: ../../data/DC_data.mat
+scene_key: dc
+
+output_csv_path: ./outputs/SpectraMorph_python_sweep_results.csv
+
+psf_names:
+  - gaussian
+  - moffat
+
+psf_sigmas:
+  - 3.4
+
+psf_kernel_radii:
+  - 7
+
+msi_band_counts:
+  - 3
+  - 4
+  - 8
+
+downsample_ratio_to_spatial_snr_db:
+  4: 35.0
+  8: 30.0
+
+spectral_snr_dbs:
+  - 40.0
+
+clip_prediction_to_unit_interval: false
+
+save_csv: true
+flush_csv_after_each_case: true
+overwrite_csv_on_start: true
+fail_fast: true

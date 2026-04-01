@@ -1,0 +1,56 @@
+scene_path: ../../data/DC_data.mat
+scene_key: dc
+
+output_csv_path: ./outputs/SpectraMorph_python_explicit_deg_results.csv
+
+psf_names:
+  - gaussian
+
+psf_sigmas:
+  - 3.4
+
+psf_kernel_radii:
+  - 7
+
+degradation_specs:
+  - downsample_ratio: 4
+    msi_band_count: 4
+    spatial_snr_db: 35.0
+    spectral_snr_db: 40.0
+
+  - downsample_ratio: 8
+    msi_band_count: 4
+    spatial_snr_db: 30.0
+    spectral_snr_db: 40.0
+
+  - downsample_ratio: 16
+    msi_band_count: 4
+    spatial_snr_db: 25.0
+    spectral_snr_db: 40.0
+
+  - downsample_ratio: 32
+    msi_band_count: 4
+    spatial_snr_db: 20.0
+    spectral_snr_db: 40.0
+
+  - downsample_ratio: 8
+    msi_band_count: 3
+    spatial_snr_db: 30.0
+    spectral_snr_db: 40.0
+
+  - downsample_ratio: 8
+    msi_band_count: 8
+    spatial_snr_db: 30.0
+    spectral_snr_db: 40.0
+
+  - downsample_ratio: 8
+    msi_band_count: 16
+    spatial_snr_db: 30.0
+    spectral_snr_db: 40.0
+
+clip_prediction_to_unit_interval: false
+
+save_csv: true
+flush_csv_after_each_case: true
+overwrite_csv_on_start: true
+fail_fast: true
