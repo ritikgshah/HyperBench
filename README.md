@@ -99,6 +99,12 @@ This package installs all the hyperbench dependencies, however, any additional l
 
 ---
 
+## Data
+
+This repository does not host any datasets. Popular hyperspectral datasets in the .mat format can be easily downloaded online. Users can also visit this link: https://github.com/ritikgshah/SpectraLift/tree/main/Datasets where the Washington DC Mall, Kennedy Space Center, Botswana, Pavia University, and Pavia Center datasets in .mat format are hosted.
+
+---
+
 ## Repository Structure
 ```
 hyperbench/
@@ -167,6 +173,14 @@ The sequence in which you should explore these notebooks is clearly explained in
 ## CLI: Running HyperBench from Python Scripts
 
 The `cli/` directory provides a clean, script-based pathway to run HyperBench end-to-end—without notebooks. It mirrors the full workflow demonstrated in **Notebook 07 (End-to-End Benchmark Pipeline)** and is intended for repeatable, production-style experiments. [Command line interface help](cli/cli_README.md) provides further details about how to structure python scripts, how to use yaml and json configuration templates to run your own experiments, and how to integrate a simple pipeline (the same one used in the notebooks tutorial) to get started with the HyperBench framework.
+
+---
+
+## Examples: Integrating Real-World Models with HyperBench
+
+The `examples/` directory demonstrates how **real-world hyperspectral super-resolution models** can be seamlessly integrated into the HyperBench framework.
+
+Unlike the tutorial notebooks, which focus on understanding the framework using simplified pipelines, this section shows how HyperBench operates in **practical research settings** with full model implementations. [Examples readme](examples/examples_README.md) provides exact details about which methods are included, how to go through the examples directory, and enables users to seamless understand how to structure their models for easy integration with HyperBench.
 
 ---
 
