@@ -29,7 +29,7 @@ These methods were selected because:
 - they highlight the importance of **systematic experimentation**
 
 We intentionally limit the examples to these methods to ensure:
-- correctness of implementation
+- correctness of implementation (since these methods were created by the authors of HyperBench, we can ensure that the methods are implemented correctly)
 - clarity of integration
 - maintainability of the repository
 
