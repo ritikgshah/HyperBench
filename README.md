@@ -69,14 +69,46 @@ HyperBench implements the full evaluation workflow:
 
 Models must expose:
 
-def run_pipeline(HR_MSI, LR_HSI, srf, psf=None, metadata=None):
-    return prediction
+```
+def run_pipeline(HR_MSI, LR_HSI, srf, psf, metadata=None):
+   # Your model logic
+   return prediction
+```
+or optionally if you profile your model's FLOPs, number of parameters, GPU memory usage, etc. put the model statistics with their label into a dictionary called statistics for HyperBench to include these in the CSV files produced in addition to the quality metrics which will be included in this output CSV by default:
+```
+def run_pipeline(HR_MSI, LR_HSI, srf, psf, metadata=None):
+   # Your model logic
+   return prediction, stats
+```
+Supported backends include NumPy, TensorFlow, and PyTorch. This run_pipline function must be wrapped in a class:
 
-or optionally:
+```
+class ExamplePipeline:
+    def run_pipeline(self, HR_MSI, LR_HSI, srf, psf, metadata=None):
+        return run_pipeline(HR_MSI, LR_HSI, srf, psf, metadata)
+```
 
-return prediction, stats
+This ExamplePipeline class can then be given to HyperBench:
 
-Supported backends include NumPy, TensorFlow, and PyTorch.
+```
+    adapter = PipelineAdapter(
+        pipeline=ExamplePipeline(),
+        name=method_name,
+        input_backend="numpy",
+        output_backend="numpy",
+        add_batch_dim=False,
+        device="auto",
+    )
+```
+
+This setup allows HyperBench to directly give the LR HSI, HR MSI, SRF, and PSF as inputs to your model. If your model does not need any of these inputs (for example some models do not require the SRF or the PSF as inputs), you can simply define your ExamplePipeline class to take them as None:
+```
+class ExamplePipeline:
+    def run_pipeline(self, HR_MSI, LR_HSI, srf=None, psf=None, metadata=None):
+        return run_pipeline(HR_MSI, LR_HSI, srf, psf, metadata)
+```
+
+If your method requires scene specific or degradation specific hyperparameter tuning, you must take care of this within your run_pipeline function itself. HyperBench does not support any specific hyperparameter settings, since it expects the user to directly supply a model contract through the run_pipeline function defined by the user, allowing you to explicitly define the exact hyperparameters that your model needs when running HyperBench on a specific dataset and with specific degradations. 
 
 ---
 
