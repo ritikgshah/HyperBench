@@ -13,6 +13,8 @@ HyperBench provides a standardized and reproducible pipeline for generating synt
 
 HyperBench is currently released as a flexible benchmarking framework rather than a fixed leaderboard benchmark. It is intended to help researchers evaluate HSI-MSI fusion methods under controlled, reproducible degradation settings while allowing custom datasets, models, PSFs, SRFs, metrics, and experiment configurations. Official benchmark tracks and leaderboard protocols are under development.
 
+## HyperBench is intended to be a community-extensible framework. Its usefulness will grow rapidly as researchers contribute realistic PSFs, SRFs, degradation models, sensor configurations, metrics, and baseline integrations. We welcome and appreciate open-source contributions that help make hyperspectral super-resolution and HSI-MSI fusion evaluation more reproducible, diverse, and representative of real imaging conditions.
+
 ---
 
 ## Overview
