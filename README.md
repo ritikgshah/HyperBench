@@ -11,6 +11,8 @@ It is designed for the setting in which a high-resolution hyperspectral image (H
 
 HyperBench provides a standardized and reproducible pipeline for generating synthetic degradations, evaluating reconstruction quality, and logging structured results.
 
+HyperBench is currently released as a flexible benchmarking framework rather than a fixed leaderboard benchmark. It is intended to help researchers evaluate HSI-MSI fusion methods under controlled, reproducible degradation settings while allowing custom datasets, models, PSFs, SRFs, metrics, and experiment configurations. Official benchmark tracks and leaderboard protocols are under development.
+
 ---
 
 ## Overview
